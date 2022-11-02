@@ -1,3 +1,4 @@
+import Demo from "./components/Demo";
 
 function App() {
   const h1style = {
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <h1 style={h1style}>Azizbek  </h1>
       <p style={Doctor}>He is a Doctor</p>
+      <Demo name="Ali"/>
     </div>
 
   );
