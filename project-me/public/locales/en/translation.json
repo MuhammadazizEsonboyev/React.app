@@ -1,0 +1,12 @@
+{
+    "admin": {
+        "drawer": {
+            "menu_text": "Hello World"
+        },
+        "language_label": {
+            "uzbek": "Uzbek",
+            "russian": "Russian",
+            "english": "English"
+          }
+    }
+}
