@@ -1,7 +1,9 @@
 {
     "admin": {
         "drawer": {
-            "menu_text": "Привет, мир"
+            "menu_category": "Привет категория",
+            "menu_home": "Привет Дом",
+            "menu_product": " Привет продукты"
         }
     }
 }

@@ -7,7 +7,7 @@ i18n
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
-  .init({ 
+  .init({
     backend: {
       loadPath: `/locales/{{lng}}/translation.json`,
     },
@@ -15,5 +15,5 @@ i18n
     interpolation: {
       escapeValue: false,
     },
-    supportedLngs: ["uz", "ru", "en"],
+    // supportedLngs: ["uz", "ru", "en"],
   });

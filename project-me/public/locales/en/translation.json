@@ -1,7 +1,9 @@
 {
     "admin": {
         "drawer": {
-            "menu_text": "Hello World"
+            "menu_category": "Hello Category",
+            "menu_home": "Hello Home",
+            "menu_product" : "Hello Product"
         },
         "language_label": {
             "uzbek": "Uzbek",
