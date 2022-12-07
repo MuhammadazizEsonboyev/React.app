@@ -1,9 +1,0 @@
-{
-    "admin": {
-        "drawer": {
-            "menu_category": "Salom Category",
-            "menu_home": "Salom Uy",
-            "menu_product" : "Salom Mahsulotlar"
-        }
-    }
-}

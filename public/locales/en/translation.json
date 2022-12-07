@@ -1,0 +1,19 @@
+{
+    "admin": {
+        "drawer": {
+            "menu_category": "Hello Product List",
+            "menu_home": "Hello Home",
+            "menu_product" : "Hello Product"
+        },
+        "menu": {
+            "menu_home": "Home",
+            "menu_product": "Product",
+            "menu_category": "Product List"
+        },
+        "language_label": {
+            "uzbek": "Uzbek",
+            "russian": "Russian",
+            "english": "English"
+          }
+    }
+}
