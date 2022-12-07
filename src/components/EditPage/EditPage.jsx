@@ -11,6 +11,7 @@ export default function EditPage() {
     const [description, setDescription] = useState("")
     const [image, setImage] = useState("")
     const navigate = useNavigate()
+    console.log(user)
 
     const getDataById = async (id) => {
         await axios.get(`http://localhost:3000/data/${id}`)
@@ -48,7 +49,7 @@ export default function EditPage() {
 
     useEffect(() => {
         getDataById(id)
-    }, [])
+    }, [id])
 
 
 

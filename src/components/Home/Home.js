@@ -1,11 +1,8 @@
 import React from 'react'
 import { Grid, Paper, Typography } from '@mui/material'
-import { useTranslation } from "react-i18next"
-import SimpleChart from '../Chart/Chart'
 import Example from '../charts/ReactChart'
 
 export default function Home() {
-    const { t } = useTranslation()
 
     return (
         <>

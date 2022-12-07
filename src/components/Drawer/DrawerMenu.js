@@ -18,8 +18,6 @@ import MenuRouter from "../MenuRouter/MenuRouter"
 import "./drawer.css"
 import SelectSmall from './Select/Select';
 import { useTranslation } from "react-i18next"
-import Home from '../Home/Home';
-import App from '../../App';
 
 
 const drawerWidth = 240;
