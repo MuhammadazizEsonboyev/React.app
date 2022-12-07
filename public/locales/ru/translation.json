@@ -1,0 +1,19 @@
+{
+    "admin": {
+        "drawer": {
+            "menu_category": "Привет категория",
+            "menu_home": "Привет Дом",
+            "menu_product": " Привет продукты"
+        },
+        "menu": {
+            "menu_home": "Дом",
+            "menu_product": " Продукты",
+            "menu_category": "Cписок продуктов"
+        },
+        "language_label": {
+            "uzbek": "Uzbek",
+            "russian": "Russian",
+            "english": "English"
+          }
+    }
+}

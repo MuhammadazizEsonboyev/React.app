@@ -1,0 +1,19 @@
+{
+    "admin": {
+        "drawer": {
+            "menu_category": "Salom Category",
+            "menu_home": "Salom Uy",
+            "menu_product": "Salom Mahsulotlar"
+        },
+        "menu": {
+            "menu_home": "Uy",
+            "menu_product": "Mahsulot",
+            "menu_category": "Mahsulot ro'yxati"
+        },
+        "language_label": {
+            "uzbek": "Uzbek",
+            "russian": "Russian",
+            "english": "English"
+        }
+    }
+}
