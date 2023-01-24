@@ -3,7 +3,7 @@
         "drawer": {
             "menu_category": "Hello Product List",
             "menu_home": "Hello Home",
-            "menu_product" : "Hello Product"
+            "menu_product" : "Task for developers!"
         },
         "menu": {
             "menu_home": "Home",

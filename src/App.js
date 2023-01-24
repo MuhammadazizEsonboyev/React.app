@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import Product from "./components/Product/Product";
 import ProductList from "./components/ProductList/ProductList";
 import EditPage from "./components/EditPage/EditPage";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/product-list/about/:id" element={<About />} />
           <Route path="/product-list" element={<ProductList />} />
           <Route path="/product-list/edit-product/:id" element={<EditPage/>} />
           <Route path="*" element={<h1 style={{marginLeft: "300px"}}>404 NOT FOUND</h1>} />

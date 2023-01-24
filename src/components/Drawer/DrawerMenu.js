@@ -22,10 +22,7 @@ import { useTranslation } from "react-i18next"
 
 const drawerWidth = 240;
 export default function DrawerMenu() {
-
-
     const { t } = useTranslation()
-
 
     return (
         <Box sx={{ display: 'flex' }}>
@@ -80,12 +77,6 @@ export default function DrawerMenu() {
                 </List>
                 <Divider />
             </Drawer>
-
-            <Box
-                component="main"
-                sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
-            >
-            </Box>
         </Box>
     );
 }

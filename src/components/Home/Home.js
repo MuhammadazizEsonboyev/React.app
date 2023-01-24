@@ -3,7 +3,6 @@ import { Grid, Paper, Typography } from '@mui/material'
 import Example from '../charts/ReactChart'
 
 export default function Home() {
-
     return (
         <>
             <Grid container
