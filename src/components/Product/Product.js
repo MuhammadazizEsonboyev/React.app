@@ -12,7 +12,8 @@ export default function Product() {
   const [name, setName] = useState('')
   const [description, setDescription] = useState('')
   const [price, setPrice] = useState('')
-  const [image, setImage] = useState('')
+  const [image, setImage] = useState('https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar-thumbnail.png')
+  const [href, setHref] = useState('')
   const navigate = useNavigate()
 
 
@@ -23,7 +24,8 @@ export default function Product() {
       name: name,
       description: description,
       price: price,
-      img: image
+      image: image,
+      tg_href: href
     }
     await axios.post("http://localhost:3000/data", data)
       .then(res => {
@@ -36,19 +38,20 @@ export default function Product() {
     <Grid container
       direction="row"
       justifyContent="center">
-      <Grid item xs={5} sx={{marginLeft: "150px", marginTop: "80px", flexDirection: "column"}}>
+      <Grid item xs={5} sx={{ marginLeft: "150px", marginTop: "80px", flexDirection: "column" }}>
         <Paper elevation={3}>
           <React.Fragment>
             <Grid container
               direction="row"
               justifyContent="center" textAlign="start" >
-              <Grid item xs={8} sx={{paddingBottom: "80px"}}>
+              <Grid item xs={8} sx={{ paddingBottom: "80px" }}>
                 <Typography component="h1" sx={{ paddingTop: "70px", paddingBottom: "30px", fontSize: "30px" }}>{t("admin.drawer.menu_product")}</Typography>
                 <form onSubmit={handleSubmit} >
-                  <TextField id="outlined-basic" required onChange={(e) => setName(e.target.value)} sx={{  marginBottom: "20px", width: "100%", outline: "none" }} label="Name" variant="outlined" />
-                  <TextField id="outlined-basic" required onChange={(e) => setPrice(e.target.value)} sx={{ marginBottom: "20px", width: "100%", outline: "none" }} label="Description" variant="outlined" />
-                  <TextField id="outlined-basic" required onChange={(e) => setDescription(e.target.value)} sx={{  marginBottom: "20px", width: "100%", outline: "none" }} label="Price" variant="outlined" />
-                  <TextField id="outlined-basic" required onChange={(e) => setImage(e.target.value)} sx={{  marginBottom: "20px", width: "100%", outline: "none" }} label="Image" variant="outlined" />
+                  <TextField id="outlined-basic" required onChange={(e) => setName(e.target.value)} sx={{ marginBottom: "20px", width: "100%", outline: "none" }} label="Name" variant="outlined" />
+                  <TextField id="outlined-basic" required onChange={(e) => setPrice(e.target.value)} sx={{ marginBottom: "20px", width: "100%", outline: "none" }} label="Task" variant="outlined" />
+                  <TextField id="outlined-basic" required onChange={(e) => setDescription(e.target.value)} sx={{ marginBottom: "20px", width: "100%", outline: "none" }} label="Day" variant="outlined" />
+                  {/* <TextField id="outlined-basic" required value={"https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar-thumbnail.png"} onChange={(e) => setImage(e.target.value)} sx={{ marginBottom: "20px", width: "100%", outline: "none" }} label="Image" variant="outlined" /> */}
+                  <TextField id="outlined-basic" required onChange={(e) => setHref(e.target.value)} sx={{ marginBottom: "20px", width: "100%", outline: "none" }} label="Telegram personal blog" variant="outlined" />
                   <Button variant='outlined' type="submit" sx={{ width: "100%" }}>Create info</Button>
                 </form>
               </Grid>

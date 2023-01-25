@@ -55,34 +55,34 @@ export default function ProductList() {
             <Table sx={{ maxWidth: 1000 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
-                  <TableCell>Image</TableCell>
-                  <TableCell align="right">Name</TableCell>
-                  <TableCell align="right">Description</TableCell>
-                  <TableCell align="right">Price</TableCell>
-                  <TableCell align="right" sx={{paddingLeft: "10px"}} >Edit</TableCell>
-                  <TableCell align="right" sx={{paddingLeft: "10px"}}>Delete</TableCell>
-                  <TableCell align="right" sx={{paddingLeft: "10px"}}>About</TableCell>
+                  <TableCell align="center">Image</TableCell>
+                  <TableCell align="center">Name</TableCell>
+                  <TableCell align="right">Task</TableCell>
+                  <TableCell align="right">Day</TableCell>
+                  <TableCell align="right" sx={{ paddingLeft: "10px" }} >Edit</TableCell>
+                  <TableCell align="right" sx={{ paddingLeft: "10px" }}>Delete</TableCell>
+                  <TableCell align="right" sx={{ paddingLeft: "10px" }}>About</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody >
                 {rows.map((row) => (
                   <TableRow
-                    key={row.id}
+                    key={row?.id}
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
-                    <TableCell component="th" scope="row">
-                      <img src={row.image} style={{ borderRadius: "6px" }} width={100} height={"60px"} alt="" />
+                    <TableCell component="th" scope="row" sx={{ width: "100px", height: "100px" }}>
+                      <img src={row?.image} style={{ borderRadius: "6px" }} width={"100%"} height={"100%"} alt="" />
                     </TableCell>
-                    <TableCell align="right">{row.name}</TableCell>
-                    <TableCell align="right">{row.description}</TableCell>
-                    <TableCell align="right">{row.price}$</TableCell>
+                    <TableCell align="right">{row?.name}</TableCell>
+                    <TableCell align="right">{row?.description} day</TableCell>
+                    <TableCell align="right">{row?.price}</TableCell>
                     <TableCell align="right" >
                       <Link style={{ textDecoration: "none" }} to={row.id ? `/product-list/edit-product/${row.id}` : null}>
                         <Button variant='outlined' >Edit</Button>
                       </Link>
                     </TableCell>
                     <TableCell align="right" >
-                      <Button variant='outlined'  onClick={() => handleChange(row.id)}>Delete</Button>
+                      <Button variant='contained' sx={{background: "red"}} onClick={() => handleChange(row.id)}>Delete</Button>
                     </TableCell>
                     <TableCell align="right" >
                       <Link to={`/product-list/about/${row.id}`} style={{ textDecoration: "none" }}>

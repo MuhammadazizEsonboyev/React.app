@@ -1,18 +1,20 @@
 {
   "data": [
     {
-      "name": "Ali Banad",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, libero?",
-      "price": 200,
-      "id": 5,
-      "image": "https://placeimg.com/640/480/arch"
+      "name": "Sarvar Abdumajidov ",
+      "description": "3 ",
+      "price": "Footter ni qilishi kerak",
+      "image": "https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar-thumbnail.png",
+      "tg_href": "https://t.me/Mayor_esanbaev",
+      "id": 2
     },
     {
-      "name": "Ali",
-      "description": "2000",
-      "price": "Banad Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, libero?",
-      "image": "https://placeimg.com/640/480/arch",
-      "id": 6
+      "name": "Quvonchbek Ubaydullayev ",
+      "description": "2",
+      "price": "Header Footer sectionni qilishi kerak",
+      "image": "https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar-thumbnail.png",
+      "tg_href": "https://t.me/Mayor_esanbaev",
+      "id": 3
     }
   ]
 }

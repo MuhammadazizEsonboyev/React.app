@@ -1,14 +1,14 @@
 {
     "admin": {
         "drawer": {
-            "menu_category": "Hello Product List",
+            "menu_category": "Tasks For iTech students!",
             "menu_home": "Hello Home",
             "menu_product" : "Task for developers!"
         },
         "menu": {
             "menu_home": "Home",
-            "menu_product": "Product",
-            "menu_category": "Product List"
+            "menu_product": "Create Tasks",
+            "menu_category": "Student Lists"
         },
         "language_label": {
             "uzbek": "Uzbek",

@@ -20,7 +20,7 @@ export default function EditPage() {
                 setName(data?.data?.name)
                 setDescription(data?.data?.description)
                 setPrice(data?.data?.price)
-                setImage(data?.data?.img)
+                setImage(data?.data?.image)
             })
     }
 

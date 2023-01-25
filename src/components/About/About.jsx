@@ -1,8 +1,9 @@
-import { Avatar, Grid, Paper, Typography } from '@mui/material'
+import { Avatar, Button, Card, CardActions, CardContent, CardMedia, Grid, Paper, Typography } from '@mui/material'
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+const cr_image = require("../../img/qr.code.jpg")
 
 export default function About() {
     const [data, setData] = useState([])
@@ -21,22 +22,37 @@ export default function About() {
         <div>
             <Grid container
                 direction="row"
-                justifyContent="center"
-                alignItems="center">
-                <Grid item xs={6}>
-                    <Paper elevation={3} style={{ marginTop: "100px" }}>
-                        <h1 style={{ paddingLeft: "20px", paddingTop: "20px" }}>{data.name} :</h1>
-                        <Typography component="div" style={{ paddingLeft: "20px", paddingTop: "20px", display: "flex", justifyContent: "space-between"}}>
-                            <Avatar alt="Remy Sharp" src={data.image} sx={{ width: 100, height: 100 }} />
-                            <Typography component="div">
-                                    <Paper elevation={2} sx={{padding: "10px"}}>
-                                        <Typography component="div" width={300}>
-                                            <h3 style={{color: "gray"}}>Task name: <span style={{color: "black"}}>{data.description}</span></h3>
-                                        </Typography>
-                                    </Paper>
-                            </Typography>
+                justifyContent="center" mt={12}>
+                <Grid item xs={4}>
+                    <Card sx={{ height: "300px" }}>
+                        <Typography component="div" sx={{ display: "flex", justifyContent: "center", paddingTop: "20px" }}>
+                            <CardMedia
+                                sx={{ height: "140px", width: "140px", borderRadius: "50%" }}
+                                image={data.image}
+                                title="green iguana"
+                            />
                         </Typography>
-                    </Paper>
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                {data.name}
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                {data.description} day
+                            </Typography>
+                        </CardContent>
+                        <CardActions>
+                            <Button size="small" href={data.tg_href}>Share</Button>
+                            <Button size="small">Learn More</Button>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid item xs={2}>
+                    <CardMedia
+                        component="img"
+                        alt="green iguana"
+                        height="300"
+                        image={cr_image}
+                    />
                 </Grid>
             </Grid>
 

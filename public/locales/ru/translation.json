@@ -1,14 +1,14 @@
 {
     "admin": {
         "drawer": {
-            "menu_category": "Привет категория",
+            "menu_category": "Задания для студентов iTech!",
             "menu_home": "Привет Дом",
             "menu_product": " Задание для разработчиков!"
         },
         "menu": {
             "menu_home": "Дом",
-            "menu_product": " Продукты",
-            "menu_category": "Cписок продуктов"
+            "menu_product": " Создать задачи",
+            "menu_category": "Списки студентов"
         },
         "language_label": {
             "uzbek": "Uzbek",
